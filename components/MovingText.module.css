@@ -1,0 +1,32 @@
+@keyframes moveRightToLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.movingTextContainer {
+  overflow: hidden;
+}
+
+.movingText {
+  animation: moveRightToLeft 20s linear infinite;
+  font-size: 20px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Add responsive classes to adjust font size at different breakpoints */
+@media (max-width: 768px) {
+  .movingText {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movingText {
+    font-size: 12px;
+  }
+}
