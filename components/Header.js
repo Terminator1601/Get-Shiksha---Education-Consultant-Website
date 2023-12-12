@@ -15,6 +15,11 @@ const Header = () => {
 
       {/* Dropdown Section */}
       {/* <div className="flex-1 p-4 flex flex-col"> */}
+
+      <div className="mb-4">
+        <label className="block text-sm font-medium text-gray-700">Home</label>
+      </div>
+
       {/* Dropdown 1 */}
       <div className="mb-4">
         <label className="block text-sm font-medium text-gray-700">
