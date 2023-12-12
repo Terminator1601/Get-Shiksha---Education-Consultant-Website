@@ -2,7 +2,7 @@
 // components/MovingText.js
 
 import React from 'react';
-import styles from './MovingText.module.css';
+import styles from '@/components/styles/MovingText.module.css';
 
 const MovingText = () => {
   return (
