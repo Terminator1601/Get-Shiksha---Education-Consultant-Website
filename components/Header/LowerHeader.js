@@ -3,7 +3,7 @@ import React from "react";
 const LowerHeader = () => {
   return (
     <>
-      <div class="header-top">
+      <div class="header-top text-center">
         <span>
           <i class="fas fa-phone me-3 text-secondary"></i> + 91 9777170076
         </span>

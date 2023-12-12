@@ -16,6 +16,11 @@
   font-size: 20px;
   display: inline-block;
   white-space: nowrap;
+  margin: 0px 0px;
+  padding: 0px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: x-large;
+  /* background-color: chocolate; */
 }
 
 /* Add responsive classes to adjust font size at different breakpoints */
@@ -27,6 +32,6 @@
 
 @media (max-width: 480px) {
   .movingText {
-    font-size: 12px;
+    font-size: 14px;
   }
 }

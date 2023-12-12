@@ -1,16 +1,21 @@
 import React from "react";
-import Header from "@/components/Header";
-import MovingText from "@/components/MovingText";
-import LowerHeader from "@/components/LowerHeader";
-import ControlledCarousel from "@/components/ControlledCarousel";
+import Header from "@/components/Header/Header";
+import MovingText from "@/components/Header/MovingText";
+import LowerHeader from "@/components/Header/LowerHeader";
+import ImageCarousel from "@/components/Carousel/ImageCarousel";
 import WelcomeSection from "@/components/WelcomeSection";
 import WhyGS from "@/components/WhyGS";
 import CoursesSection from "@/components/CourseSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
+  const imagePaths = [
+    '/assets/images/banner/page-1.png',
+    '/assets/images/banner/page-1.png',
+    '/assets/images/banner/page-1.png',
+  ];
   return (
     <>
       {/* <div>App</div> */}
@@ -18,9 +23,9 @@ const App = () => {
       <hr />
       <Header />
       <hr />
-      <LowerHeader />
+      <ImageCarousel imagePaths={imagePaths} />
       <hr />
-      <ControlledCarousel />
+      <LowerHeader />
       <hr />
       <WelcomeSection />
       <hr />

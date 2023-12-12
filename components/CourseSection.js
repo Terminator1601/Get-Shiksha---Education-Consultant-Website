@@ -1,20 +1,22 @@
 // components/CoursesSection.js
 
-import React from 'react';
-import CourseCard from './CourseCard';
+import React from "react";
+import CourseCard from "./Carousel/CourseCard";
 
 const CoursesSection = () => {
   return (
     <section id="courses">
       <h1>Popular courses to get enrolled.</h1>
-      <div className="row" style={{ margin: '0 -5px' }}>
+      <div className="row" style={{ margin: "0 -5px" }}>
         <div className="col-sm-6 col-lg-4">
-          <CourseCard
-            imagePath="/assets/images/engineer.png"
-            altText="engineering"
-            title="Engineering"
-            link="#"
-          />
+          
+            <CourseCard
+              imagePath="/assets/images/engineer.png"
+              altText="engineering"
+              title="Engineering"
+              link="/Engineering"
+            />
+          
         </div>
         <div className="col-sm-6 col-lg-4">
           <CourseCard

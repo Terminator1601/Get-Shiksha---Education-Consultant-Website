@@ -1,0 +1,27 @@
+/* styles.css */
+.slick-slider {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    font-size: 24px;
+  }
+  /* components/ImageCarousel.module.css */
+.slickArrow {
+  font-size: 18px;
+  color: white;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slickNext {
+  right: 10px;
+}
+
+.slickPrev {
+  left: 10px;
+}
