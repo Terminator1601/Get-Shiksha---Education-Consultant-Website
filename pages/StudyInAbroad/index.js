@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "@/components/Header/Header";
 import MovingText from "@/components/Header/MovingText";
-import CoursesSection from "@/pages/StudyInIndia/CourseSectionUpdated";
+import CoursesSection from "@/pages/CourseSectionUpdated";
 import Footer from "@/components/Footer/Footer";
 import "@/components/styles/Header.css";
 import { useRouter } from "next/router";

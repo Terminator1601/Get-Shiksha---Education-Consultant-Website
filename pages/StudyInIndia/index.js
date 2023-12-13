@@ -1,7 +1,7 @@
 import Header from '@/components/Header/Header'
 import React from 'react'
 import  '@/components/styles/Header.css'
-import CoursesSection from '@/pages/StudyInIndia/CourseSectionUpdated'
+import CoursesSection from '@/pages/CourseSectionUpdated'
 import MovingText from '@/components/Header/MovingText'
 import Footer from '@/components/Footer/Footer'
 import { useRouter } from 'next/router'
