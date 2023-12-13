@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 
 const StudyInAbroad = () => {
   const router = useRouter();
-  const country = router.query.category;
+  var country = router.query.category;
 
   return (
     <>
