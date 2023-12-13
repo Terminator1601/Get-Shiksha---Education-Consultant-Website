@@ -18,7 +18,7 @@ const CoursesSection = () => {
               imagePath="/assets/images/engineer.png"
               altText="engineering"
               title="Engineering"
-              link="/Colleges?program=Engineering"
+              link="/Select-Country?program=Engineering"
             />
           
         </div>
@@ -27,7 +27,7 @@ const CoursesSection = () => {
             imagePath="/assets/images/doctor.png"
             altText="medical"
             title="Medical"
-            link="/Colleges?program=Medical"
+            link="/Select-Country?program=Medical"
           />
         </div>
         <div className="col-sm-6 col-lg-4">
@@ -35,7 +35,7 @@ const CoursesSection = () => {
             imagePath="/assets/images/mba.png"
             altText="management"
             title="Management"
-            link="/Colleges?program=MBA"
+            link="/Select-Country?program=MBA"
           />
         </div>
       </div>
