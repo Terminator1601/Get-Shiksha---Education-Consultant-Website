@@ -1,7 +1,7 @@
 // components/CoursesSection.js
 
 import React from "react";
-import CourseCard from "./Carousel/CourseCard";
+import CourseCard from "@/components/Carousel/CourseCard";
 // import { useRouter } from "next/navigation";
 
 const CoursesSection = () => {
@@ -18,7 +18,7 @@ const CoursesSection = () => {
               imagePath="/assets/images/engineer.png"
               altText="engineering"
               title="Engineering"
-              link="/Colleges?program=Engineering"
+              link="/StudyInAbroad/Colleges?program=Engineering&category=India"
             />
           
         </div>
@@ -27,7 +27,7 @@ const CoursesSection = () => {
             imagePath="/assets/images/doctor.png"
             altText="medical"
             title="Medical"
-            link="/Colleges?program=Medical"
+            link="/StudyInAbroad/Colleges?program=Medical&category=India"
           />
         </div>
         <div className="col-sm-6 col-lg-4">
@@ -35,7 +35,7 @@ const CoursesSection = () => {
             imagePath="/assets/images/mba.png"
             altText="management"
             title="Management"
-            link="/Colleges?program=MBA"
+            link="/StudyInAbroad/Colleges?program=MBA&category=India"
           />
         </div>
       </div>
