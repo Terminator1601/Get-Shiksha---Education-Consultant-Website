@@ -13,10 +13,10 @@ const WelcomeSection = () => {
             your DREAM College with your DREAM Course.
           </p>
           <div className="btn-group" role="group">
-            <a href="#courses" className="btn anibtn btn-dark btn-lg">
+            <a href="/CourseSectionUpdated?category=Abroad" className="btn anibtn btn-dark btn-lg">
               Abroad
             </a>
-            <a href="#courses" className="btn anibtn btn-secondary btn-lg">
+            <a href="/CourseSectionUpdated?category=India" className="btn anibtn btn-secondary btn-lg">
               India
             </a>
           </div>
