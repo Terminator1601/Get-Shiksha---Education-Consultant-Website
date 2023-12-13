@@ -1,43 +1,39 @@
-// components/CoursesSection.js
-
 import React from "react";
 import CourseCard from "./Carousel/CourseCard";
-// import { useRouter } from "next/navigation";
 
 const CoursesSection = () => {
-  // const router = useRouter()
-  // const category = router.query.category
-  
+  const courses = [
+    {
+      program: "Engineering",
+      imagePath: "/assets/images/engineer.png",
+      altText: "engineering",
+    },
+    {
+      program: "Medical",
+      imagePath: "/assets/images/doctor.png",
+      altText: "medical",
+    },
+    {
+      program: "MBA",
+      imagePath: "/assets/images/mba.png",
+      altText: "management",
+    },
+  ];
+
   return (
     <section id="courses">
       <h1>Popular courses to get enrolled.</h1>
       <div className="row" style={{ margin: "0 -5px" }}>
-        <div className="col-sm-6 col-lg-4">
-          
+        {courses.map((course, index) => (
+          <div key={index} className="col-sm-6 col-lg-4">
             <CourseCard
-              imagePath="/assets/images/engineer.png"
-              altText="engineering"
-              title="Engineering"
-              link="/Select-Country?program=Engineering"
+              imagePath={course.imagePath}
+              altText={course.altText}
+              title={course.program}
+              link={`/Select-Country?program=${course.program}`}
             />
-          
-        </div>
-        <div className="col-sm-6 col-lg-4">
-          <CourseCard
-            imagePath="/assets/images/doctor.png"
-            altText="medical"
-            title="Medical"
-            link="/Select-Country?program=Medical"
-          />
-        </div>
-        <div className="col-sm-6 col-lg-4">
-          <CourseCard
-            imagePath="/assets/images/mba.png"
-            altText="management"
-            title="Management"
-            link="/Select-Country?program=MBA"
-          />
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );
