@@ -36,7 +36,7 @@ const Header = () => {
       </div>
       <div className="text-lg flex">
         <div className="mb-4 text-lg">
-          <a href="/" className="" style={{ textDecoration: "none" }}>
+          <a href="/StudyInAbroad" className="" style={{ textDecoration: "none" }}>
             <label className="block text-lg font-medium px-6 py-3">
               Study In Abroad
             </label>

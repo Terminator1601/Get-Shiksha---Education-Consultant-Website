@@ -72,7 +72,7 @@ const Footer = () => (
           <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             {/* Content */}
             <h6 className="text-uppercase fw-bold mb-4">
-              <img src="/images/getshiksha.png" width="150px" alt="GetShiksha Logo" />
+              <img src="/assets/images/getshiksha.png" width="150px" alt="GetShiksha Logo" />
             </h6>
           </div>
           {/* Grid column */}
