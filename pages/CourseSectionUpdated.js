@@ -34,7 +34,7 @@ const CoursesSection = () => {
               imagePath={course.imagePath}
               altText={course.altText}
               title={course.program}
-              link={`/StudyInAbroad/Colleges?program=${course.program}&category=${category}`}
+              link={`/StudyIn${category}/Colleges?program=${course.program}&category=${category}`}
             />
           </div>
         ))}
