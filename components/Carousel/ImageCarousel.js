@@ -26,14 +26,14 @@ const ImageCarousel = ({ imagePaths }) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    // nextArrow: <NextArrow />,
+    // prevArrow: <PrevArrow />,
   };
 
   return (
     <Slider {...settings}>
       {imagePaths.map((imagePath, index) => (
-        <div key={index}>
+        <div key={index}  className="bg-inherit">
           <img src={imagePath} alt={`slide-${index}`} />
         </div>
       ))}
