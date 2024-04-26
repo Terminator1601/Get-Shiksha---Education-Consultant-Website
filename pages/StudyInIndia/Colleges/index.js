@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import CollegeList from "../../../components/CollegeCard/CollegeList"
 
 const index = () => {
   const router = useRouter();
@@ -9,6 +10,7 @@ const index = () => {
     <>
       <h1>Program: {program}</h1>
       <h1>category: {category}</h1>
+
     </>
   );
 };

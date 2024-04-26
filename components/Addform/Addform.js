@@ -31,6 +31,7 @@ const CollegeForm = () => {
       type: "select",
       name: "course",
       options: [
+        { value: "", label: "Default" },
         { value: "eng", label: "Engineering" },
         { value: "med", label: "Medical" },
         { value: "mba", label: "MBA" },
@@ -51,7 +52,7 @@ const CollegeForm = () => {
 
     try {
       const collectionName =
-        collegeData.country === "india" ? "Study-in-India" : "Study-in-Abroad";
+        collegeData.country === "india" ? "Colleges-in-India" : "Colleges-in-Abroad";
 
       await addDoc(collection(db, collectionName), {
         name: collegeData.name,
