@@ -29,6 +29,16 @@ const testimonialsData = [
       altText: "Anish Sharma",
       content: "Best educational service once I visited I was confused about my admission they helped me a lot",
       name: "Anish Sharma"
+    },{
+      imageSrc: "https://lh3.googleusercontent.com/a-/AD_cMMTlM7JuesPWie532Xcl7AkEFBOVIQwiE-z7HPzWwg=w45-h45-p-c0x00000000-rp-mo-br100",
+      altText: "Anish Sharma",
+      content: "Best educational service once I visited I was confused about my admission they helped me a lot",
+      name: "Anish Sharma"
+    },{
+      imageSrc: "https://lh3.googleusercontent.com/a-/AD_cMMTlM7JuesPWie532Xcl7AkEFBOVIQwiE-z7HPzWwg=w45-h45-p-c0x00000000-rp-mo-br100",
+      altText: "Anish Sharma",
+      content: "Best educational service once I visited I was confused about my admission they helped me a lot",
+      name: "Anish Sharma"
     },
   ];
   
