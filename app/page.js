@@ -29,9 +29,9 @@ const App = () => {
       <hr />
       <WelcomeSection />
       <hr />
-      <WhyGS />
-      <hr />
       <CoursesSection />
+      <hr />
+      <WhyGS />
       <hr />
       <TestimonialsSection />
       <hr />

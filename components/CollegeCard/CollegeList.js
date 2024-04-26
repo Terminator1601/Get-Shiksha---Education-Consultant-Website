@@ -1,19 +1,54 @@
 import React, { useEffect, useState } from "react";
-import { db } from "../../../database/firebaseconfig";
-import { collection, getDocs } from "firebase/firestore";
-import Link from "next/link";
-import { useRouter } from 'next/router'
-
-
-import React from 'react'
+import { db } from "../../Database/firebaseconfig";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { useRouter } from 'next/router';
 
 const CollegeList = () => {
-  return (
-    <div>College List</div>
-  )
-}
+  const router = useRouter();
+  const [colleges, setColleges] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-export default CollegeList
+  useEffect(() => {
+    const fetchColleges = async () => {
+      try {
+        setLoading(true);
+        const { program, category } = router.query;
+        const collegesCollection = collection(db, "Colleges");
+        const q = query(collegesCollection, where("program", "==", program), where("category", "==", category));
+        const snapshot = await getDocs(q);
+        const data = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        setColleges(data);
+      } catch (error) {
+        console.error("Error fetching colleges:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchColleges();
+  }, [router.query]);
+
+  return (
+    <div>
+      <h1 className="text-center text-2xl font-bold mt-8 mb-4">Colleges for {router.query.program} in {router.query.category}</h1>
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        <ul>
+          {colleges.map(college => (
+            <li key={college.id}>
+              <Link href={`/college/${college.id}`}>
+                <a>{college.name}</a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+};
+
+export default CollegeList;
 
 
 
